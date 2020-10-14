@@ -14,9 +14,9 @@ while True:
     word = input("Rock, Paper, or Scissor ?")
     if word.lower() in list:
         Comp = random.choice(list); print(Comp)
-        if word.lower() == 'rock' and Comp == 'paper' or  \
-           word.lower() == 'paper' and Comp == 'scissor' or  \
-           word.lower() == 'scissor' and Comp == 'rock'  :
+        if word.lower() == 'paper' and Comp == 'rock' or  \
+           word.lower() == 'rock' and Comp == 'scissor' or  \
+           word.lower() == 'scissor' and Comp == 'paper'  :
             print("Congratulations! You won")
             my_win += 1
         elif word.lower() == Comp:
@@ -35,5 +35,5 @@ while True:
         print('You Won %d Times' %my_win )
         print('You Lost %d Times' %my_loss)
         print('You Tied %d Times' %my_tie)
-        print('See you later, alligator!')
+        print('See you later')
         break
